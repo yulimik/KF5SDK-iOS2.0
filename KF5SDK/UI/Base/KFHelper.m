@@ -314,6 +314,8 @@ static NSBundle *bundle = nil;
     imagePickerVC.allowPickingVideo = NO;
     imagePickerVC.allowTakeVideo = NO;
     imagePickerVC.barItemTextFont = [UIFont boldSystemFontOfSize:17];
+    imagePickerVC.barItemTextFont = [UIColor colorWithRed:50/255 green:60/255 blue:65/255 alpha:1.0];
+    imagePickerVC.naviTitleColor = [UIColor colorWithRed:50/255 green:60/255 blue:65/255 alpha:1.0];
     imagePickerVC.preferredLanguage = [self localLanguage];    
     [imagePickerVC setDidFinishPickingPhotosHandle:^(NSArray<UIImage *> *photos, NSArray *assets, BOOL isSelectOriginalPhoto) {
         didFinishedHandle(photos,assets);
